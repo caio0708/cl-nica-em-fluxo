@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
-const CAL_COM_URL = "https://cal.com/caio-terencio-yjozs1/reuniao-30-min";
+const CAL_COM_URL = "https://cal.com/seu-usuario/consultoria";
 const WHATSAPP_NUMBER = "5511999999999";
 
 const SchedulingSection = () => {
@@ -28,13 +28,30 @@ const SchedulingSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <iframe
-            src={`${CAL_COM_URL}?embed=true&theme=light`}
-            className="w-full border-0"
-            style={{ minHeight: "650px" }}
-            title="Agendar consultoria gratuita"
-            allow="payment"
-          />
+          {/* Cal.com Embed Placeholder */}
+          <div className="w-full min-h-[500px] flex flex-col items-center justify-center p-8 text-center">
+            <div className="w-20 h-20 rounded-2xl bg-secondary flex items-center justify-center mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-primary">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <p className="text-xl font-display font-bold text-foreground mb-2">Widget Cal.com</p>
+            <p className="text-muted-foreground mb-4 max-w-md">
+              Substitua este placeholder pelo embed do seu Cal.com. 
+              Basta trocar a URL no componente <code className="bg-secondary px-2 py-0.5 rounded text-sm">SchedulingSection.tsx</code>
+            </p>
+            <a
+              href={CAL_COM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition-all hover:-translate-y-0.5"
+            >
+              Agendar Agora
+            </a>
+          </div>
         </motion.div>
 
         <motion.p

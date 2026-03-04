@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, CalendarCheck, MessageCircle } from "lucide-react";
 import { useEffect } from "react";
 
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5511948040856";
 
 const Obrigado = () => {
   useEffect(() => {

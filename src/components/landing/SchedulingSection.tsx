@@ -1,16 +1,30 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { useEffect } from "react";
-import Cal, { getCalApi } from "@calcom/embed-react";
 
 const WHATSAPP_NUMBER = "5511948040856";
 
 const SchedulingSection = () => {
   useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "reuniao-30-min" });
-      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    })();
+    const script = document.createElement("script");
+    script.src = "https://app.cal.com/embed/embed.js";
+    script.async = true;
+    script.onload = () => {
+      const Cal = (window as any).Cal;
+      if (!Cal) return;
+      Cal("init", "reuniao-30-min", { origin: "https://app.cal.com" });
+      Cal.ns["reuniao-30-min"]("inline", {
+        elementOrSelector: "#my-cal-inline-reuniao-30-min",
+        config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
+        calLink: "caio-terencio-yjozs1/reuniao-30-min",
+      });
+      Cal.ns["reuniao-30-min"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    };
+    document.head.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
   }, []);
 
   return (

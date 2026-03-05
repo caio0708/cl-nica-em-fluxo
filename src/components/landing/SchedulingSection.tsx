@@ -6,47 +6,52 @@ const WHATSAPP_NUMBER = "5511999999999";
 
 const SchedulingSection = () => {
   useEffect(() => {
-    const C = window as any;
-    const A = "https://app.cal.com/embed/embed.js";
-    const L = "init";
-
-    const p = function (a: any, ar: any) { a.q.push(ar); };
-    const d = C.document;
-
-    C.Cal = C.Cal || function () {
-      const cal = C.Cal;
-      const ar = arguments;
-      if (!cal.loaded) {
-        cal.ns = {};
-        cal.q = cal.q || [];
-        d.head.appendChild(d.createElement("script")).src = A;
-        cal.loaded = true;
-      }
-      if (ar[0] === L) {
-        const api = function () { p(api, arguments); } as any;
-        const namespace = ar[1];
-        api.q = api.q || [];
-        if (typeof namespace === "string") {
-          cal.ns[namespace] = cal.ns[namespace] || api;
-          p(cal.ns[namespace], ar);
-          p(cal, ["initNamespace", namespace]);
-        } else {
-          p(cal, ar);
+    // Load Cal.com embed script
+    const win = window as any;
+    const initCal = () => {
+      win.Cal = win.Cal || function () {
+        const cal = win.Cal;
+        const ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {};
+          cal.q = cal.q || [];
+          const script = document.createElement("script");
+          script.src = "https://app.cal.com/embed/embed.js";
+          document.head.appendChild(script);
+          cal.loaded = true;
         }
-        return;
-      }
-      p(cal, ar);
+        if (ar[0] === "init") {
+          const api = function () { api.q.push(arguments); } as any;
+          const namespace = ar[1];
+          api.q = api.q || [];
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            (cal.ns[namespace] as any).q.push(ar);
+            cal.q.push(["initNamespace", namespace]);
+          } else {
+            cal.q.push(ar);
+          }
+          return;
+        }
+        cal.q.push(ar);
+      };
+      win.Cal.q = win.Cal.q || [];
     };
 
-    C.Cal("init", "reuniao-30-min", { origin: "https://app.cal.com" });
+    initCal();
 
-    C.Cal.ns["reuniao-30-min"]("inline", {
+    win.Cal("init", "reuniao-30-min", { origin: "https://app.cal.com" });
+
+    win.Cal.ns["reuniao-30-min"]("inline", {
       elementOrSelector: "#my-cal-inline-reuniao-30-min",
       config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
       calLink: "caio-terencio-yjozs1/reuniao-30-min",
     });
 
-    C.Cal.ns["reuniao-30-min"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    win.Cal.ns["reuniao-30-min"]("ui", {
+      hideEventTypeDetails: false,
+      layout: "month_view",
+    });
   }, []);
 
   return (
@@ -66,7 +71,7 @@ const SchedulingSection = () => {
         </motion.div>
 
         <motion.div
-          className="max-w-5xl mx-auto bg-card rounded-2xl overflow-hidden shadow-2xl"
+          className="max-w-3xl mx-auto bg-card rounded-2xl overflow-hidden shadow-2xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

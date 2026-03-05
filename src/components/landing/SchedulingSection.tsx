@@ -30,7 +30,7 @@ const SchedulingSection = () => {
         </motion.div>
 
         <motion.div
-          className="max-w-3xl mx-auto bg-card rounded-2xl overflow-hidden shadow-2xl"
+          className="max-w-5xl mx-auto bg-card rounded-2xl overflow-hidden shadow-2xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -39,7 +39,7 @@ const SchedulingSection = () => {
           <Cal
             namespace="reuniao-30-min"
             calLink="caio-terencio-yjozs1/reuniao-30-min"
-            style={{ width: "100%", height: "100%", overflow: "scroll" }}
+            style={{ width: "100%", height: "100%", overflow: "scroll", minHeight: "650px" }}
             config={{ layout: "month_view", useSlotsViewOnSmallScreen: "true" }}
           />
         </motion.div>

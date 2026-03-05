@@ -12,8 +12,7 @@ const SchedulingSection = () => {
       cal("inline", {
         elementOrSelector: "#my-cal-inline-reuniao-30-min",
         calLink: "caio-terencio-yjozs1/reuniao-30-min",
-        layout: "month_view",
-        config: { useSlotsViewOnSmallScreen: "true" },
+        config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
       });
       cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
     })();

@@ -39,7 +39,7 @@ const SchedulingSection = () => {
           <Cal
             namespace="reuniao-30-min"
             calLink="caio-terencio-yjozs1/reuniao-30-min"
-            style={{ width: "100%", height: "100%", overflow: "scroll" }}
+            style={{ width: "100%", height: "100%", overflow: "scroll", minHeight: "650px" }}
             config={{ layout: "month_view", useSlotsViewOnSmallScreen: "true" }}
           />
         </motion.div>

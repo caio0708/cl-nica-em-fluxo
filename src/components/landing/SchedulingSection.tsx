@@ -36,11 +36,16 @@ const SchedulingSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <Cal
-            namespace="reuniao-30-min"
-            calLink="caio-terencio-yjozs1/reuniao-30-min"
-            style={{ width: "100%", height: "100%", overflow: "scroll" }}
-            config={{ layout: "month_view", useSlotsViewOnSmallScreen: "true" }}
+          <div
+            style={{
+              width: "100%",
+              maxWidth: "1000px",
+              minWidth: "850px",
+              margin: "0 auto",
+              height: "100%",
+              overflow: "scroll",
+            }}
+            id="my-cal-inline-reuniao-30-min"
           />
         </motion.div>
 

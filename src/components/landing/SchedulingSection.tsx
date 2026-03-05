@@ -9,6 +9,12 @@ const SchedulingSection = () => {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({ namespace: "reuniao-30-min" });
+      cal("inline", {
+        elementOrSelector: "#my-cal-inline-reuniao-30-min",
+        calLink: "caio-terencio-yjozs1/reuniao-30-min",
+        layout: "month_view",
+        config: { useSlotsViewOnSmallScreen: "true" },
+      });
       cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
     })();
   }, []);

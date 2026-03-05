@@ -51,6 +51,16 @@ const SchedulingSection = () => {
     win.Cal.ns["reuniao-30-min"]("ui", {
       hideEventTypeDetails: false,
       layout: "month_view",
+      cssVarsPerTheme: {
+        dark: {
+          "cal-bg": "transparent",
+          "cal-bg-emphasis": "transparent",
+        },
+        light: {
+          "cal-bg": "transparent",
+          "cal-bg-emphasis": "transparent",
+        },
+      },
     });
   }, []);
 

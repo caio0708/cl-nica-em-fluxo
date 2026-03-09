@@ -124,6 +124,7 @@ const HeroSection = () => {
 
       {/* Decorative diagonal */}
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-background" style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 0)" }} />
+    </section>
   );
 };
 

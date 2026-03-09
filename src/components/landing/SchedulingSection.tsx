@@ -35,7 +35,7 @@ const SchedulingSection = () => {
         </motion.div>
 
         <motion.div
-          className="max-w-3xl mx-auto bg-card rounded-2xl overflow-hidden shadow-2xl"
+          className="mx-auto overflow-x-auto"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -46,9 +46,8 @@ const SchedulingSection = () => {
               width: "100%",
               maxWidth: "1000px",
               minWidth: "850px",
+              minHeight: "680px",
               margin: "0 auto",
-              height: "100%",
-              overflow: "scroll",
             }}
             id="my-cal-inline-reuniao-30-min"
           />

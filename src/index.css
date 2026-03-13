@@ -1,101 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Space+Grotesk:wght@500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 210 20% 98%;
-    --foreground: 215 25% 14%;
+:root {
+  --ink: #0e0e0e;
+  --paper: #f2ede4;
+  --paper-dark: #e6dfd3;
+  --red: #c0311a;
+  --red-dim: #8a2212;
+  --muted: rgba(14, 14, 14, 0.45);
+  --line: rgba(14, 14, 14, 0.12);
+}
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 14%;
+/* Blueprint grid overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(60, 100, 160, 0.12) 0px,
+      rgba(60, 100, 160, 0.12) 1px,
+      transparent 1px,
+      transparent 28px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(60, 100, 160, 0.12) 0px,
+      rgba(60, 100, 160, 0.12) 1px,
+      transparent 1px,
+      transparent 28px
+    );
+}
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 14%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    --primary: 215 65% 22%;
-    --primary-foreground: 210 40% 98%;
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
 
-    --secondary: 210 30% 95%;
-    --secondary-foreground: 215 25% 14%;
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 12% 50%;
+/* Pulsing red dot */
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.7; }
+}
 
-    --accent: 0 78% 55%;
-    --accent-foreground: 0 0% 100%;
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214 20% 90%;
-    --input: 214 20% 90%;
-    --ring: 215 65% 22%;
-
-    --radius: 0.75rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+/* Staggered fade up */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
   }
-
-  .dark {
-    --background: 215 25% 8%;
-    --foreground: 210 40% 98%;
-
-    --card: 215 25% 11%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 215 25% 11%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 215 65% 22%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 0 78% 55%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+.fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+  opacity: 0;
+}
 
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'DM Sans', sans-serif;
-  }
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
-  }
+html {
+  scroll-behavior: smooth;
 }

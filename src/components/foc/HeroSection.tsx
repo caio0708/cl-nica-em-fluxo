@@ -114,10 +114,10 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
         {stats.map((s, i) => (
           <div key={i} className="px-6 py-5 text-center"
             style={{ borderRight: i < stats.length - 1 ? '1px solid var(--line)' : 'none' }}>
-            <div className="font-display text-4xl">
+            <div className="font-display text-5xl">
               {s.value}<span style={{ color: s.color }}>{s.suffix}</span>
             </div>
-            <div className="font-mono text-[9px] tracking-[0.15em] uppercase mt-1" style={{ color: 'var(--muted)' }}>
+            <div className="font-mono text-[11px] tracking-[0.15em] uppercase mt-1" style={{ color: 'var(--muted)' }}>
               {s.label}
             </div>
           </div>

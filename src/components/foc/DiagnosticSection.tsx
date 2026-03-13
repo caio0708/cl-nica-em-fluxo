@@ -33,15 +33,15 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
               <span style={{ color: 'var(--red)' }}>RESULTADO</span><br />
               concreto.
             </h2>
-            <p className="text-[15px] font-light leading-[1.75] mb-10 max-w-[520px]" style={{ color: 'var(--muted)' }}>
+            <p className="text-[17px] font-light leading-[1.75] mb-10 max-w-[520px]" style={{ color: 'var(--muted)' }}>
               Não é reunião de vendas. É um diagnóstico real da sua operação — útil mesmo que você não feche nada.
               Se não fizer sentido para você, a gente diz.
             </p>
             <div>
               {steps.map((step, i) => (
                 <div key={i} className="flex gap-4 py-5" style={{ borderBottom: '1px solid var(--line)' }}>
-                  <span className="font-mono text-[10px] w-7 shrink-0 pt-1" style={{ color: 'var(--red)' }}>0{i + 1}</span>
-                  <p className="text-[14px] font-light leading-[1.7]">{step}</p>
+                  <span className="font-mono text-[12px] w-7 shrink-0 pt-1" style={{ color: 'var(--red)' }}>0{i + 1}</span>
+                  <p className="text-[16px] font-light leading-[1.7]">{step}</p>
                 </div>
               ))}
             </div>
@@ -53,12 +53,12 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
               {/* Card header */}
               <div className="flex items-center justify-between px-6 py-5" style={{ background: 'var(--ink)' }}>
                 <div>
-                  <span className="font-mono text-[10px] tracking-wide block" style={{ color: 'rgba(242,237,228,0.45)' }}>
+                  <span className="font-mono text-[12px] tracking-wide block" style={{ color: 'rgba(242,237,228,0.45)' }}>
                     Diagnóstico Operacional
                   </span>
                   <span className="font-display text-[28px]" style={{ color: 'var(--paper)' }}>Sistema FOC</span>
                 </div>
-                <span className="font-mono text-[10px] tracking-wide uppercase px-3 py-1"
+                <span className="font-mono text-[12px] tracking-wide uppercase px-3 py-1"
                   style={{ color: 'var(--red)', border: '1px solid var(--red)', background: 'rgba(192,49,26,0.1)' }}>
                   Gratuito
                 </span>
@@ -67,7 +67,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
               {/* Card body */}
               <div className="px-6 py-2" style={{ background: 'var(--paper)' }}>
                 {offerItems.map((item, i) => (
-                  <div key={i} className="flex gap-3 py-4 text-[13px] font-light" style={{ borderBottom: '1px solid var(--line)' }}>
+                  <div key={i} className="flex gap-3 py-4 text-[15px] font-light" style={{ borderBottom: '1px solid var(--line)' }}>
                     <span style={{ color: 'var(--red)' }}>→</span>
                     <span>{item}</span>
                   </div>
@@ -78,7 +78,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
               <div className="px-6 py-6" style={{ background: 'var(--paper)' }}>
                 <button
                   onClick={onOpenPopup}
-                  className="w-full font-mono text-[13px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
+                  className="w-full font-mono text-[15px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
                   style={{
                     background: 'var(--red)',
                     color: '#fff',
@@ -97,7 +97,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
                 >
                   Agendar meu Diagnóstico →
                 </button>
-                <p className="font-mono text-[9px] text-center mt-4" style={{ color: 'var(--muted)' }}>
+                <p className="font-mono text-[11px] text-center mt-4" style={{ color: 'var(--muted)' }}>
                   Vagas limitadas por mês para garantir qualidade<br />
                   Exclusivo para administradoras com carteira ativa
                 </p>

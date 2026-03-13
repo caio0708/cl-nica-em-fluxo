@@ -102,7 +102,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           </button>
 
           {/* Micro qualifier */}
-          <p className="fade-up font-mono text-[10px] mt-4" style={{ color: 'var(--muted)' }}>
+          <p className="fade-up font-mono text-[12px] mt-4" style={{ color: 'var(--muted)' }}>
             30 minutos · gratuito · exclusivo para administradoras com carteira ativa
           </p>
         </div>

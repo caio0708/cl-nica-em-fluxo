@@ -11,7 +11,7 @@ const questions = [
     question: 'Qual a faixa de faturamento mensal da sua administradora?',
     options: [
       { label: 'Menos de R$ 30k/mês', value: 'low' },
-      { label: 'Entre R$ 30k e R$ 80k/mês', value: 'low' },
+      { label: 'Entre R$ 30k e R$ 80k/mês', value: 'ok' },
       { label: 'Entre R$ 80k e R$ 250k/mês', value: 'ok' },
       { label: 'Acima de R$ 250k/mês', value: 'ok' },
     ],

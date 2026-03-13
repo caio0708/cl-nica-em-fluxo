@@ -66,9 +66,9 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           {/* H1 */}
           <h1 className="fade-up font-display leading-[0.92] tracking-[0.01em] mb-8"
             style={{ fontSize: 'clamp(52px, 8vw, 110px)' }}>
-            Sua administradora<br />
-            está <span style={{ color: 'var(--red)' }}>VAZANDO</span><br />
-            <span style={{ WebkitTextStroke: '2px var(--ink)', color: 'transparent' }}>dinheiro.</span>
+            Cada semana, sua<br />
+            operação <span style={{ color: 'var(--red)' }}>SANGRA</span><br />
+            <span style={{ WebkitTextStroke: '2px var(--ink)', color: 'transparent' }}>em silêncio.</span>
           </h1>
 
           {/* Subtitle */}

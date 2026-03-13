@@ -81,7 +81,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           {/* CTA */}
           <button
             onClick={onOpenPopup}
-            className="fade-up font-mono text-[13px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
+            className="fade-up font-mono text-[15px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
             style={{
               background: 'var(--ink)',
               color: 'var(--paper)',

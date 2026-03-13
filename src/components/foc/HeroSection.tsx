@@ -72,7 +72,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           </h1>
 
           {/* Subtitle */}
-          <p className="fade-up text-[15px] md:text-[17px] leading-[1.75] max-w-[620px] mb-10 font-light"
+          <p className="fade-up text-[17px] md:text-[19px] leading-[1.75] max-w-[620px] mb-10 font-light"
             style={{ borderLeft: '3px solid var(--red)', paddingLeft: '20px', color: 'var(--ink)' }}>
             Cada prazo legal esquecido, cada demanda perdida no WhatsApp, cada contrato renovando no automático
             — são multas, processos e clientes que somem. E tudo isso acontece toda semana, em silêncio.

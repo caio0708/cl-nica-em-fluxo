@@ -6,7 +6,7 @@ interface SectionLabelProps {
 const SectionLabel = ({ text, light = false }: SectionLabelProps) => (
   <div className="flex items-center gap-3 mb-8">
     <span
-      className="font-mono text-[10px] tracking-[0.2em] uppercase whitespace-nowrap"
+      className="font-mono text-[12px] tracking-[0.2em] uppercase whitespace-nowrap"
       style={{ color: light ? 'rgba(242,237,228,0.45)' : 'var(--muted)' }}
     >
       // {text}

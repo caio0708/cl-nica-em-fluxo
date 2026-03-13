@@ -1,21 +1,26 @@
-import HeroSection from "@/components/landing/HeroSection";
-import ProblemSection from "@/components/landing/ProblemSection";
-import SolutionSection from "@/components/landing/SolutionSection";
-import MeetingSection from "@/components/landing/MeetingSection";
-import SchedulingSection from "@/components/landing/SchedulingSection";
-import AuthorityFooter from "@/components/landing/AuthorityFooter";
-import WhatsAppButton from "@/components/landing/WhatsAppButton";
+import { useState } from "react";
+import HeroSection from "@/components/foc/HeroSection";
+import PainSection from "@/components/foc/PainSection";
+import DiagnosticSection from "@/components/foc/DiagnosticSection";
+import QualificationSection from "@/components/foc/QualificationSection";
+import FinalCTASection from "@/components/foc/FinalCTASection";
+import Footer from "@/components/foc/Footer";
+import FloatingButton from "@/components/foc/FloatingButton";
+import QualificationPopup from "@/components/foc/QualificationPopup";
 
 const Index = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
+
   return (
     <main>
-      <HeroSection />
-      <ProblemSection />
-      <SolutionSection />
-      <MeetingSection />
-      <SchedulingSection />
-      <AuthorityFooter />
-      <WhatsAppButton />
+      <HeroSection onOpenPopup={() => setPopupOpen(true)} />
+      <PainSection />
+      <DiagnosticSection onOpenPopup={() => setPopupOpen(true)} />
+      <QualificationSection />
+      <FinalCTASection onOpenPopup={() => setPopupOpen(true)} />
+      <Footer />
+      <FloatingButton onOpenPopup={() => setPopupOpen(true)} />
+      <QualificationPopup isOpen={popupOpen} onClose={() => setPopupOpen(false)} />
     </main>
   );
 };

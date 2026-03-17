@@ -157,7 +157,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
           ) : isQualified() ? (
             <div>
               <div className="text-5xl mb-4">✅</div>
-              <p className="text-[16px] font-light leading-[1.7] mb-6">
+              <p className="text-[18px] font-light leading-[1.7] mb-6">
                 Suas respostas indicam que o Diagnóstico pode ter impacto real na sua operação. Escolha um horário:
               </p>
               <div style={{ width: '100%', minHeight: '500px' }}>

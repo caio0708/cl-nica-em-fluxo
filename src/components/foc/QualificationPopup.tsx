@@ -96,7 +96,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
             {showResult ? (isQualified() ? 'Diagnóstico confirmado.' : 'Ainda não é o momento certo.') : 'Antes de agendar'}
           </h3>
           {!showResult && (
-            <p className="text-[15px] mt-1" style={{ color: 'rgba(242,237,228,0.45)' }}>
+            <p className="text-[17px] mt-1" style={{ color: 'rgba(242,237,228,0.45)' }}>
               3 perguntas rápidas para garantir que o Diagnóstico seja útil para você.
             </p>
           )}

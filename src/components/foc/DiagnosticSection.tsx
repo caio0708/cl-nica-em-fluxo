@@ -53,7 +53,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
               {/* Card header */}
               <div className="flex items-center justify-between px-6 py-5" style={{ background: 'var(--ink)' }}>
                 <div>
-                  <span className="font-mono text-[12px] tracking-wide block" style={{ color: 'rgba(242,237,228,0.45)' }}>
+                  <span className="font-mono text-[14px] tracking-wide block" style={{ color: 'rgba(242,237,228,0.45)' }}>
                     Diagnóstico Operacional
                   </span>
                   <span className="font-display text-[28px]" style={{ color: 'var(--paper)' }}>Sistema FOC</span>

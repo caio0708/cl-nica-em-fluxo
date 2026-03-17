@@ -15,7 +15,7 @@ const FinalCTASection = ({ onOpenPopup }: FinalCTASectionProps) => {
         </p>
         <button
           onClick={onOpenPopup}
-          className="font-mono text-[15px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200 mx-auto block"
+          className="font-mono text-[16px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200 mx-auto block"
           style={{
             background: '#fff',
             color: 'var(--red)',

@@ -141,7 +141,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
               <button
                 onClick={handleNext}
                 disabled={selected === null}
-                className="w-full font-mono text-[15px] tracking-[0.08em] uppercase transition-all duration-200"
+                className="w-full font-mono text-[16px] tracking-[0.08em] uppercase transition-all duration-200"
                 style={{
                   background: selected !== null ? 'var(--ink)' : 'var(--line)',
                   color: selected !== null ? 'var(--paper)' : 'var(--muted)',

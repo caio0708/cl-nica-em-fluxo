@@ -46,7 +46,7 @@ const PainSection = () => {
               <h3 className="font-body text-[20px] font-medium leading-[1.4]" style={{ color: 'var(--paper)' }}>
                 {card.title}
               </h3>
-              <p className="text-[15px] font-light leading-[1.7]" style={{ color: 'rgba(242,237,228,0.45)' }}>
+              <p className="text-[17px] font-light leading-[1.7]" style={{ color: 'rgba(242,237,228,0.45)' }}>
                 {card.desc}
               </p>
               <span className="font-mono text-[11px] tracking-[0.15em] uppercase mt-auto px-2 py-1 self-start"

@@ -58,7 +58,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           {/* Pre-label */}
           <div className="fade-up flex items-center gap-3 mb-6">
             <span className="w-8 h-0.5" style={{ background: 'var(--red)' }} />
-            <span className="font-mono text-[13px] tracking-[0.15em] uppercase font-medium" style={{ color: 'var(--red)' }}>
+            <span className="font-mono text-[15px] tracking-[0.15em] uppercase font-medium" style={{ color: 'var(--red)' }}>
               ALERTA OPERACIONAL
             </span>
           </div>

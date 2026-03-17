@@ -78,7 +78,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
               <div className="px-6 py-6" style={{ background: 'var(--paper)' }}>
                 <button
                   onClick={onOpenPopup}
-                  className="w-full font-mono text-[15px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
+                  className="w-full font-mono text-[16px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
                   style={{
                     background: 'var(--red)',
                     color: '#fff',

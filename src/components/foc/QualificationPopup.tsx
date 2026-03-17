@@ -172,7 +172,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
           ) : (
             <div>
               <div className="text-5xl mb-4">🤝</div>
-              <p className="text-[16px] font-light leading-[1.7] mb-6">
+              <p className="text-[18px] font-light leading-[1.7] mb-6">
                 Pelo que você nos contou, o Diagnóstico não vai gerar o retorno que você merece agora.
                 Quando o momento chegar, estaremos aqui.
               </p>

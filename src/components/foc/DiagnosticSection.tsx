@@ -40,8 +40,8 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
             <div>
               {steps.map((step, i) => (
                 <div key={i} className="flex gap-4 py-5" style={{ borderBottom: '1px solid var(--line)' }}>
-                  <span className="font-mono text-[12px] w-7 shrink-0 pt-1" style={{ color: 'var(--red)' }}>0{i + 1}</span>
-                  <p className="text-[16px] font-light leading-[1.7]">{step}</p>
+                  <span className="font-mono text-[14px] w-7 shrink-0 pt-1" style={{ color: 'var(--red)' }}>0{i + 1}</span>
+                  <p className="text-[18px] font-light leading-[1.7]">{step}</p>
                 </div>
               ))}
             </div>

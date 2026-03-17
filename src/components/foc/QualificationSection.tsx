@@ -28,12 +28,12 @@ const QualificationSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: '1px', background: 'var(--line)' }}>
           {/* Yes column */}
           <div className="p-8 md:p-10" style={{ background: '#f7f3ec' }}>
-            <span className="font-mono text-[12px] tracking-[0.15em] uppercase block mb-6" style={{ color: '#1a6b3c' }}>
+            <span className="font-mono text-[14px] tracking-[0.15em] uppercase block mb-6" style={{ color: '#1a6b3c' }}>
               ✓ Faz sentido para você se…
             </span>
             <div className="flex flex-col gap-4">
               {yesItems.map((item, i) => (
-                <div key={i} className="flex gap-3 text-[16px] font-light leading-[1.6]">
+                <div key={i} className="flex gap-3 text-[18px] font-light leading-[1.6]">
                   <span className="text-[16px] shrink-0" style={{ color: '#1a6b3c' }}>✓</span>
                   <span>{item}</span>
                 </div>
@@ -43,12 +43,12 @@ const QualificationSection = () => {
 
           {/* No column */}
           <div className="p-8 md:p-10" style={{ background: '#fdf0ed' }}>
-            <span className="font-mono text-[12px] tracking-[0.15em] uppercase block mb-6" style={{ color: 'var(--red)' }}>
+            <span className="font-mono text-[14px] tracking-[0.15em] uppercase block mb-6" style={{ color: 'var(--red)' }}>
               ✕ Não faz sentido se…
             </span>
             <div className="flex flex-col gap-4">
               {noItems.map((item, i) => (
-                <div key={i} className="flex gap-3 text-[16px] font-light leading-[1.6]">
+                <div key={i} className="flex gap-3 text-[18px] font-light leading-[1.6]">
                   <span className="text-[16px] shrink-0" style={{ color: 'var(--red)' }}>✕</span>
                   <span>{item}</span>
                 </div>

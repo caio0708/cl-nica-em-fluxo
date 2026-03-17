@@ -44,9 +44,9 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
         style={{ borderBottom: '1px solid var(--line)' }}>
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full pulse-dot" style={{ background: 'var(--red)' }} />
-          <span className="font-mono text-xs tracking-[0.08em] font-medium" style={{ color: 'var(--ink)' }}>SISTEMA FOC</span>
+          <span className="font-mono text-sm tracking-[0.08em] font-medium" style={{ color: 'var(--ink)' }}>SISTEMA FOC</span>
         </div>
-        <span className="hidden sm:inline-block font-mono text-[12px] tracking-wide px-3 py-1.5"
+        <span className="hidden sm:inline-block font-mono text-[14px] tracking-wide px-3 py-1.5"
           style={{ border: '1px solid var(--line)', color: 'var(--muted)' }}>
           Administradoras · Diagnóstico gratuito
         </span>
@@ -58,7 +58,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           {/* Pre-label */}
           <div className="fade-up flex items-center gap-3 mb-6">
             <span className="w-8 h-0.5" style={{ background: 'var(--red)' }} />
-            <span className="font-mono text-[13px] tracking-[0.15em] uppercase font-medium" style={{ color: 'var(--red)' }}>
+            <span className="font-mono text-[15px] tracking-[0.15em] uppercase font-medium" style={{ color: 'var(--red)' }}>
               ALERTA OPERACIONAL
             </span>
           </div>
@@ -72,7 +72,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           </h1>
 
           {/* Subtitle */}
-          <p className="fade-up text-[17px] md:text-[19px] leading-[1.75] max-w-[620px] mb-10 font-light"
+          <p className="fade-up text-[19px] md:text-[21px] leading-[1.75] max-w-[620px] mb-10 font-light"
             style={{ borderLeft: '3px solid var(--red)', paddingLeft: '20px', color: 'var(--ink)' }}>
             Cada prazo legal esquecido, cada demanda perdida no WhatsApp, cada contrato renovando no automático
             — são multas, processos e clientes que somem. E tudo isso acontece toda semana, em silêncio.
@@ -81,7 +81,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           {/* CTA */}
           <button
             onClick={onOpenPopup}
-            className="fade-up font-mono text-[15px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
+            className="fade-up font-mono text-[16px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
             style={{
               background: 'var(--ink)',
               color: 'var(--paper)',
@@ -102,7 +102,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           </button>
 
           {/* Micro qualifier */}
-          <p className="fade-up font-mono text-[12px] mt-4" style={{ color: 'var(--muted)' }}>
+          <p className="fade-up font-mono text-[14px] mt-4" style={{ color: 'var(--muted)' }}>
             30 minutos · gratuito · exclusivo para administradoras com carteira ativa
           </p>
         </div>
@@ -117,7 +117,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
             <div className="font-display text-5xl">
               {s.value}<span style={{ color: s.color }}>{s.suffix}</span>
             </div>
-            <div className="font-mono text-[11px] tracking-[0.15em] uppercase mt-1" style={{ color: 'var(--muted)' }}>
+            <div className="font-mono text-[13px] tracking-[0.15em] uppercase mt-1" style={{ color: 'var(--muted)' }}>
               {s.label}
             </div>
           </div>

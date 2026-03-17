@@ -96,7 +96,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
             {showResult ? (isQualified() ? 'Diagnóstico confirmado.' : 'Ainda não é o momento certo.') : 'Antes de agendar'}
           </h3>
           {!showResult && (
-            <p className="text-[15px] mt-1" style={{ color: 'rgba(242,237,228,0.45)' }}>
+            <p className="text-[17px] mt-1" style={{ color: 'rgba(242,237,228,0.45)' }}>
               3 perguntas rápidas para garantir que o Diagnóstico seja útil para você.
             </p>
           )}
@@ -115,7 +115,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
               </div>
 
               {/* Question */}
-              <p className="font-mono text-[14px] tracking-wide uppercase mb-6" style={{ color: 'var(--ink)' }}>
+              <p className="font-mono text-[16px] tracking-wide uppercase mb-6" style={{ color: 'var(--ink)' }}>
                 {questions[step].question}
               </p>
 
@@ -125,7 +125,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
                   <button
                     key={i}
                     onClick={() => setSelected(i)}
-                    className="text-left text-[16px] font-light px-5 py-4 cursor-pointer transition-all duration-150"
+                    className="text-left text-[18px] font-light px-5 py-4 cursor-pointer transition-all duration-150"
                     style={{
                       border: selected === i ? '2px solid var(--red)' : '1px solid var(--line)',
                       background: selected === i ? '#fdf0ed' : 'transparent',
@@ -141,7 +141,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
               <button
                 onClick={handleNext}
                 disabled={selected === null}
-                className="w-full font-mono text-[15px] tracking-[0.08em] uppercase transition-all duration-200"
+                className="w-full font-mono text-[16px] tracking-[0.08em] uppercase transition-all duration-200"
                 style={{
                   background: selected !== null ? 'var(--ink)' : 'var(--line)',
                   color: selected !== null ? 'var(--paper)' : 'var(--muted)',
@@ -157,7 +157,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
           ) : isQualified() ? (
             <div>
               <div className="text-5xl mb-4">✅</div>
-              <p className="text-[16px] font-light leading-[1.7] mb-6">
+              <p className="text-[18px] font-light leading-[1.7] mb-6">
                 Suas respostas indicam que o Diagnóstico pode ter impacto real na sua operação. Escolha um horário:
               </p>
               <div style={{ width: '100%', minHeight: '500px' }}>
@@ -172,11 +172,11 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
           ) : (
             <div>
               <div className="text-5xl mb-4">🤝</div>
-              <p className="text-[16px] font-light leading-[1.7] mb-6">
+              <p className="text-[18px] font-light leading-[1.7] mb-6">
                 Pelo que você nos contou, o Diagnóstico não vai gerar o retorno que você merece agora.
                 Quando o momento chegar, estaremos aqui.
               </p>
-              <a href="#" className="font-mono text-[15px] tracking-wide" style={{ color: 'var(--red)' }}>
+              <a href="#" className="font-mono text-[16px] tracking-wide" style={{ color: 'var(--red)' }}>
                 → Acessar conteúdo gratuito
               </a>
             </div>

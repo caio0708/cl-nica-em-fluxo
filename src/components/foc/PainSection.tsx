@@ -18,7 +18,7 @@ const PainSection = () => {
           Reconhece alguma dessas<br />
           <span style={{ color: 'var(--red)' }}>SITUAÇÕES?</span>
         </h2>
-        <p className="text-[17px] font-light max-w-[600px] leading-[1.75]" style={{ color: 'rgba(242,237,228,0.55)' }}>
+        <p className="text-[19px] font-light max-w-[600px] leading-[1.75]" style={{ color: 'rgba(242,237,228,0.55)' }}>
           Não são hipóteses. São os pontos exatos onde administradoras de condomínios perdem margem,
           clientes e reputação — sem perceber.
         </p>
@@ -40,16 +40,16 @@ const PainSection = () => {
                 e.currentTarget.style.borderTopColor = 'transparent';
               }}
             >
-              <span className="font-mono text-[12px] tracking-[0.2em] uppercase" style={{ color: 'var(--red)' }}>
+              <span className="font-mono text-[14px] tracking-[0.2em] uppercase" style={{ color: 'var(--red)' }}>
                 {card.num} — {card.cat}
               </span>
-              <h3 className="font-body text-[18px] font-medium leading-[1.4]" style={{ color: 'var(--paper)' }}>
+              <h3 className="font-body text-[20px] font-medium leading-[1.4]" style={{ color: 'var(--paper)' }}>
                 {card.title}
               </h3>
-              <p className="text-[15px] font-light leading-[1.7]" style={{ color: 'rgba(242,237,228,0.45)' }}>
+              <p className="text-[17px] font-light leading-[1.7]" style={{ color: 'rgba(242,237,228,0.45)' }}>
                 {card.desc}
               </p>
-              <span className="font-mono text-[11px] tracking-[0.15em] uppercase mt-auto px-2 py-1 self-start"
+              <span className="font-mono text-[13px] tracking-[0.15em] uppercase mt-auto px-2 py-1 self-start"
                 style={{ color: 'var(--red)', border: '1px solid var(--red)' }}>
                 {card.tag}
               </span>

@@ -125,7 +125,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
                   <button
                     key={i}
                     onClick={() => setSelected(i)}
-                    className="text-left text-[16px] font-light px-5 py-4 cursor-pointer transition-all duration-150"
+                    className="text-left text-[18px] font-light px-5 py-4 cursor-pointer transition-all duration-150"
                     style={{
                       border: selected === i ? '2px solid var(--red)' : '1px solid var(--line)',
                       background: selected === i ? '#fdf0ed' : 'transparent',

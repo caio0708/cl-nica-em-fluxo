@@ -40,7 +40,7 @@ const PainSection = () => {
                 e.currentTarget.style.borderTopColor = 'transparent';
               }}
             >
-              <span className="font-mono text-[12px] tracking-[0.2em] uppercase" style={{ color: 'var(--red)' }}>
+              <span className="font-mono text-[14px] tracking-[0.2em] uppercase" style={{ color: 'var(--red)' }}>
                 {card.num} — {card.cat}
               </span>
               <h3 className="font-body text-[18px] font-medium leading-[1.4]" style={{ color: 'var(--paper)' }}>

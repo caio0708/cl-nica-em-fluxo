@@ -66,16 +66,16 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           {/* H1 */}
           <h1 className="fade-up font-display leading-[0.92] tracking-[0.01em] mb-8"
             style={{ fontSize: 'clamp(52px, 8vw, 110px)' }}>
-            Prazos vencendo,<br />
-            demandas <span style={{ color: 'var(--red)' }}>PERDIDAS,</span><br />
-            <span style={{ WebkitTextStroke: '2px var(--ink)', color: 'transparent' }}>equipe apagando incêndio.</span>
+            Sua operação<br />
+            está <span style={{ color: 'var(--red)' }}>VAZANDO</span><br />
+            <span style={{ WebkitTextStroke: '2px var(--ink)', color: 'transparent' }}>dinheiro.</span>
           </h1>
 
           {/* Subtitle */}
           <p className="fade-up text-[19px] md:text-[21px] leading-[1.75] max-w-[620px] mb-10 font-light"
             style={{ borderLeft: '3px solid var(--red)', paddingLeft: '20px', color: 'var(--ink)' }}>
-            Sua administradora perde dinheiro toda semana com AVCB vencido, seguro esquecido e síndico
-            sem resposta — e você nem sabe quanto. Em 30 minutos, mostramos exatamente onde está o vazamento.
+            Laudos vencendo, seguros esquecidos, demandas de síndicos sem resposta — e você sem saber quanto
+            isso custa por mês. Em 30 minutos, mostramos exatamente onde estão as perdas.
           </p>
 
           {/* CTA */}

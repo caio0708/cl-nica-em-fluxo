@@ -58,7 +58,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
                   </span>
                   <span className="font-display text-[28px]" style={{ color: 'var(--paper)' }}>Sistema FOC</span>
                 </div>
-                <span className="font-mono text-[12px] tracking-wide uppercase px-3 py-1"
+                <span className="font-mono text-[14px] tracking-wide uppercase px-3 py-1"
                   style={{ color: 'var(--red)', border: '1px solid var(--red)', background: 'rgba(192,49,26,0.1)' }}>
                   Gratuito
                 </span>

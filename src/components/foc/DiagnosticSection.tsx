@@ -33,7 +33,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
               <span style={{ color: 'var(--red)' }}>RESULTADO</span><br />
               concreto.
             </h2>
-            <p className="text-[17px] font-light leading-[1.75] mb-10 max-w-[520px]" style={{ color: 'var(--muted)' }}>
+            <p className="text-[19px] font-light leading-[1.75] mb-10 max-w-[520px]" style={{ color: 'var(--muted)' }}>
               Não é reunião de vendas. É um diagnóstico real da sua operação — útil mesmo que você não feche nada.
               Se não fizer sentido para você, a gente diz.
             </p>

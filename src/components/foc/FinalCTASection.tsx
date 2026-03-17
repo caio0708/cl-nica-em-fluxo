@@ -10,7 +10,7 @@ const FinalCTASection = ({ onOpenPopup }: FinalCTASectionProps) => {
           Pare de<br />
           <span style={{ WebkitTextStroke: '2px #fff', color: 'transparent' }}>ADIVINHAR.</span>
         </h2>
-        <p className="text-[18px] font-light leading-[1.75] max-w-[520px] mx-auto mb-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
+        <p className="text-[20px] font-light leading-[1.75] max-w-[520px] mx-auto mb-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
           Saiba exatamente onde sua administradora está vazando — em 30 minutos, de graça.
         </p>
         <button

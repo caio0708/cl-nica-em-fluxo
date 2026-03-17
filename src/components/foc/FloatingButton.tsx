@@ -6,7 +6,7 @@ const FloatingButton = ({ onOpenPopup }: FloatingButtonProps) => {
   return (
     <button
       onClick={onOpenPopup}
-      className="fixed bottom-6 right-6 z-50 font-mono text-[14px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
+      className="fixed bottom-6 right-6 z-50 font-mono text-[16px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
       style={{
         background: 'var(--red)',
         color: '#fff',

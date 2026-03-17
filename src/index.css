@@ -48,7 +48,7 @@ body {
   color: var(--ink);
   background: var(--paper);
   line-height: 1.7;
-  font-size: 18px;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
 }
 

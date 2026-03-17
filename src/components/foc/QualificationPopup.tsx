@@ -176,7 +176,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
                 Pelo que você nos contou, o Diagnóstico não vai gerar o retorno que você merece agora.
                 Quando o momento chegar, estaremos aqui.
               </p>
-              <a href="#" className="font-mono text-[15px] tracking-wide" style={{ color: 'var(--red)' }}>
+              <a href="#" className="font-mono text-[16px] tracking-wide" style={{ color: 'var(--red)' }}>
                 → Acessar conteúdo gratuito
               </a>
             </div>

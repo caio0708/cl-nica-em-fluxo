@@ -117,7 +117,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
             <div className="font-display text-5xl">
               {s.value}<span style={{ color: s.color }}>{s.suffix}</span>
             </div>
-            <div className="font-mono text-[11px] tracking-[0.15em] uppercase mt-1" style={{ color: 'var(--muted)' }}>
+            <div className="font-mono text-[13px] tracking-[0.15em] uppercase mt-1" style={{ color: 'var(--muted)' }}>
               {s.label}
             </div>
           </div>

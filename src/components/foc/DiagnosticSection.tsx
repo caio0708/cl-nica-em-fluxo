@@ -97,7 +97,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
                 >
                   Agendar meu Diagnóstico →
                 </button>
-                <p className="font-mono text-[11px] text-center mt-4" style={{ color: 'var(--muted)' }}>
+                <p className="font-mono text-[13px] text-center mt-4" style={{ color: 'var(--muted)' }}>
                   Vagas limitadas por mês para garantir qualidade<br />
                   Exclusivo para administradoras com carteira ativa
                 </p>

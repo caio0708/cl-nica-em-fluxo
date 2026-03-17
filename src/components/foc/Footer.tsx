@@ -9,7 +9,7 @@ const Footer = () => {
       <p className="font-mono text-[14px] text-center" style={{ color: 'rgba(242,237,228,0.45)' }}>
         Operações previsíveis. Blindagem jurídica. Margem recuperada.
       </p>
-      <p className="font-mono text-[12px]" style={{ color: 'rgba(242,237,228,0.25)' }}>
+      <p className="font-mono text-[14px]" style={{ color: 'rgba(242,237,228,0.25)' }}>
         © 2026 — Todos os direitos reservados.
       </p>
     </footer>

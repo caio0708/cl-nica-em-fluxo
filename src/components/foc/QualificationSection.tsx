@@ -48,7 +48,7 @@ const QualificationSection = () => {
             </span>
             <div className="flex flex-col gap-4">
               {noItems.map((item, i) => (
-                <div key={i} className="flex gap-3 text-[16px] font-light leading-[1.6]">
+                <div key={i} className="flex gap-3 text-[18px] font-light leading-[1.6]">
                   <span className="text-[16px] shrink-0" style={{ color: 'var(--red)' }}>✕</span>
                   <span>{item}</span>
                 </div>

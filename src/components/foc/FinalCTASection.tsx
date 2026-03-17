@@ -34,7 +34,7 @@ const FinalCTASection = ({ onOpenPopup }: FinalCTASectionProps) => {
         >
           Agendar Diagnóstico Gratuito →
         </button>
-        <p className="font-mono text-[12px] mt-5" style={{ color: 'rgba(255,255,255,0.45)' }}>
+        <p className="font-mono text-[14px] mt-5" style={{ color: 'rgba(255,255,255,0.45)' }}>
           Gratuito · 30 min · Sem compromisso · Se não fizer sentido, a gente diz
         </p>
       </div>

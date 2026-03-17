@@ -18,7 +18,7 @@ const PainSection = () => {
           Reconhece alguma dessas<br />
           <span style={{ color: 'var(--red)' }}>SITUAÇÕES?</span>
         </h2>
-        <p className="text-[17px] font-light max-w-[600px] leading-[1.75]" style={{ color: 'rgba(242,237,228,0.55)' }}>
+        <p className="text-[19px] font-light max-w-[600px] leading-[1.75]" style={{ color: 'rgba(242,237,228,0.55)' }}>
           Não são hipóteses. São os pontos exatos onde administradoras de condomínios perdem margem,
           clientes e reputação — sem perceber.
         </p>

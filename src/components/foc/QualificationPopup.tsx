@@ -115,7 +115,7 @@ const QualificationPopup = ({ isOpen, onClose }: QualificationPopupProps) => {
               </div>
 
               {/* Question */}
-              <p className="font-mono text-[14px] tracking-wide uppercase mb-6" style={{ color: 'var(--ink)' }}>
+              <p className="font-mono text-[16px] tracking-wide uppercase mb-6" style={{ color: 'var(--ink)' }}>
                 {questions[step].question}
               </p>
 

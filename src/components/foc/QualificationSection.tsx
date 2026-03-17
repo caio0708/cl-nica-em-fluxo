@@ -43,7 +43,7 @@ const QualificationSection = () => {
 
           {/* No column */}
           <div className="p-8 md:p-10" style={{ background: '#fdf0ed' }}>
-            <span className="font-mono text-[12px] tracking-[0.15em] uppercase block mb-6" style={{ color: 'var(--red)' }}>
+            <span className="font-mono text-[14px] tracking-[0.15em] uppercase block mb-6" style={{ color: 'var(--red)' }}>
               ✕ Não faz sentido se…
             </span>
             <div className="flex flex-col gap-4">

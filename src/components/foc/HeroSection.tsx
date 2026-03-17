@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import heroDashboard from "@/assets/hero-dashboard.png";
 
 interface HeroSectionProps {
   onOpenPopup: () => void;
@@ -52,59 +53,78 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
         </span>
       </nav>
 
-      {/* Hero body */}
+      {/* Hero body — two columns */}
       <div className="relative z-10 flex-1 flex items-center px-6 lg:px-[7vw] lg:pl-[calc(7vw+40px)]">
-        <div className="max-w-[880px] py-16">
-          {/* Pre-label */}
-          <div className="fade-up flex items-center gap-3 mb-6">
-            <span className="w-8 h-0.5" style={{ background: 'var(--red)' }} />
-            <span className="font-mono text-[15px] tracking-[0.15em] uppercase font-medium" style={{ color: 'var(--red)' }}>
-              PARA ADMINISTRADORAS DE CONDOMÍNIOS
-            </span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full py-16">
+          {/* Left — copy */}
+          <div className="max-w-[620px]">
+            {/* Pre-label */}
+            <div className="fade-up flex items-center gap-3 mb-6">
+              <span className="w-8 h-0.5" style={{ background: 'var(--red)' }} />
+              <span className="font-mono text-[15px] tracking-[0.15em] uppercase font-medium" style={{ color: 'var(--red)' }}>
+                PARA ADMINISTRADORAS DE CONDOMÍNIOS
+              </span>
+            </div>
+
+            {/* H1 */}
+            <h1 className="fade-up font-display leading-[0.92] tracking-[0.01em] mb-8"
+              style={{ fontSize: 'clamp(52px, 8vw, 110px)' }}>
+              Sua operação<br />
+              está <span style={{ color: 'var(--red)' }}>VAZANDO</span><br />
+              <span style={{ WebkitTextStroke: '2px var(--ink)', color: 'transparent' }}>dinheiro.</span>
+            </h1>
+
+            {/* Subtitle */}
+            <p className="fade-up text-[19px] md:text-[21px] leading-[1.75] max-w-[620px] mb-6 font-light"
+              style={{ borderLeft: '3px solid var(--red)', paddingLeft: '20px', color: 'var(--ink)' }}>
+              Laudos vencendo, seguros esquecidos, demandas de síndicos sem resposta — e você sem saber quanto
+              isso custa por mês. Em 30 minutos, mostramos exatamente onde estão as perdas.
+            </p>
+
+            {/* FOC explainer */}
+            <p className="fade-up font-mono text-[14px] mb-10 leading-[1.6]" style={{ color: 'var(--muted)' }}>
+              <span style={{ color: 'var(--red)', fontWeight: 500 }}>FOC</span> = Fluxo Operacional de Condomínios.
+              Processo + automação + dados para blindar sua administradora.
+            </p>
+
+            {/* CTA */}
+            <button
+              onClick={onOpenPopup}
+              className="fade-up font-mono text-[16px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
+              style={{
+                background: 'var(--ink)',
+                color: 'var(--paper)',
+                padding: '18px 36px',
+                border: 'none',
+                boxShadow: '4px 4px 0 var(--red)',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.transform = 'translate(-3px, -3px)';
+                e.currentTarget.style.boxShadow = '7px 7px 0 var(--red)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.transform = 'translate(0, 0)';
+                e.currentTarget.style.boxShadow = '4px 4px 0 var(--red)';
+              }}
+            >
+              Quero um Diagnóstico gratuito →
+            </button>
+
+            {/* Micro qualifier */}
+            <p className="fade-up font-mono text-[14px] mt-4" style={{ color: 'var(--muted)' }}>
+              30 minutos · gratuito · exclusivo para administradoras com carteira ativa
+            </p>
           </div>
 
-          {/* H1 */}
-          <h1 className="fade-up font-display leading-[0.92] tracking-[0.01em] mb-8"
-            style={{ fontSize: 'clamp(52px, 8vw, 110px)' }}>
-            Sua operação<br />
-            está <span style={{ color: 'var(--red)' }}>VAZANDO</span><br />
-            <span style={{ WebkitTextStroke: '2px var(--ink)', color: 'transparent' }}>dinheiro.</span>
-          </h1>
-
-          {/* Subtitle */}
-          <p className="fade-up text-[19px] md:text-[21px] leading-[1.75] max-w-[620px] mb-10 font-light"
-            style={{ borderLeft: '3px solid var(--red)', paddingLeft: '20px', color: 'var(--ink)' }}>
-            Laudos vencendo, seguros esquecidos, demandas de síndicos sem resposta — e você sem saber quanto
-            isso custa por mês. Em 30 minutos, mostramos exatamente onde estão as perdas.
-          </p>
-
-          {/* CTA */}
-          <button
-            onClick={onOpenPopup}
-            className="fade-up font-mono text-[16px] tracking-[0.08em] uppercase cursor-pointer transition-all duration-200"
-            style={{
-              background: 'var(--ink)',
-              color: 'var(--paper)',
-              padding: '18px 36px',
-              border: 'none',
-              boxShadow: '4px 4px 0 var(--red)',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.transform = 'translate(-3px, -3px)';
-              e.currentTarget.style.boxShadow = '7px 7px 0 var(--red)';
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.transform = 'translate(0, 0)';
-              e.currentTarget.style.boxShadow = '4px 4px 0 var(--red)';
-            }}
-          >
-            Quero um Diagnóstico gratuito →
-          </button>
-
-          {/* Micro qualifier */}
-          <p className="fade-up font-mono text-[14px] mt-4" style={{ color: 'var(--muted)' }}>
-            30 minutos · gratuito · exclusivo para administradoras com carteira ativa
-          </p>
+          {/* Right — dashboard image */}
+          <div className="fade-up hidden lg:block">
+            <img
+              src={heroDashboard}
+              alt="Dashboard do Sistema FOC para gestão de condomínios"
+              className="w-full"
+              style={{ border: '2px solid var(--ink)', boxShadow: '8px 8px 0 var(--ink)' }}
+            />
+          </div>
         </div>
       </div>
 

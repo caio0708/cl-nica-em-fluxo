@@ -67,7 +67,7 @@ const DiagnosticSection = ({ onOpenPopup }: DiagnosticSectionProps) => {
               {/* Card body */}
               <div className="px-6 py-2" style={{ background: 'var(--paper)' }}>
                 {offerItems.map((item, i) => (
-                  <div key={i} className="flex gap-3 py-4 text-[15px] font-light" style={{ borderBottom: '1px solid var(--line)' }}>
+                  <div key={i} className="flex gap-3 py-4 text-[17px] font-light" style={{ borderBottom: '1px solid var(--line)' }}>
                     <span style={{ color: 'var(--red)' }}>→</span>
                     <span>{item}</span>
                   </div>

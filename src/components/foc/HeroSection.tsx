@@ -59,23 +59,23 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
           <div className="fade-up flex items-center gap-3 mb-6">
             <span className="w-8 h-0.5" style={{ background: 'var(--red)' }} />
             <span className="font-mono text-[15px] tracking-[0.15em] uppercase font-medium" style={{ color: 'var(--red)' }}>
-              ALERTA OPERACIONAL
+              PARA ADMINISTRADORAS DE CONDOMÍNIOS
             </span>
           </div>
 
           {/* H1 */}
           <h1 className="fade-up font-display leading-[0.92] tracking-[0.01em] mb-8"
             style={{ fontSize: 'clamp(52px, 8vw, 110px)' }}>
-            Cada semana, sua<br />
-            operação <span style={{ color: 'var(--red)' }}>SANGRA</span><br />
-            <span style={{ WebkitTextStroke: '2px var(--ink)', color: 'transparent' }}>em silêncio.</span>
+            Prazos vencendo,<br />
+            demandas <span style={{ color: 'var(--red)' }}>PERDIDAS,</span><br />
+            <span style={{ WebkitTextStroke: '2px var(--ink)', color: 'transparent' }}>equipe apagando incêndio.</span>
           </h1>
 
           {/* Subtitle */}
           <p className="fade-up text-[19px] md:text-[21px] leading-[1.75] max-w-[620px] mb-10 font-light"
             style={{ borderLeft: '3px solid var(--red)', paddingLeft: '20px', color: 'var(--ink)' }}>
-            Cada prazo legal esquecido, cada demanda perdida no WhatsApp, cada contrato renovando no automático
-            — são multas, processos e clientes que somem. E tudo isso acontece toda semana, em silêncio.
+            Sua administradora perde dinheiro toda semana com AVCB vencido, seguro esquecido e síndico
+            sem resposta — e você nem sabe quanto. Em 30 minutos, mostramos exatamente onde está o vazamento.
           </p>
 
           {/* CTA */}

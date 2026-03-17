@@ -44,7 +44,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
         style={{ borderBottom: '1px solid var(--line)' }}>
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full pulse-dot" style={{ background: 'var(--red)' }} />
-          <span className="font-mono text-xs tracking-[0.08em] font-medium" style={{ color: 'var(--ink)' }}>SISTEMA FOC</span>
+          <span className="font-mono text-sm tracking-[0.08em] font-medium" style={{ color: 'var(--ink)' }}>SISTEMA FOC</span>
         </div>
         <span className="hidden sm:inline-block font-mono text-[12px] tracking-wide px-3 py-1.5"
           style={{ border: '1px solid var(--line)', color: 'var(--muted)' }}>

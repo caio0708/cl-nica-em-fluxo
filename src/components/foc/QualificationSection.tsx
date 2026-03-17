@@ -28,7 +28,7 @@ const QualificationSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: '1px', background: 'var(--line)' }}>
           {/* Yes column */}
           <div className="p-8 md:p-10" style={{ background: '#f7f3ec' }}>
-            <span className="font-mono text-[12px] tracking-[0.15em] uppercase block mb-6" style={{ color: '#1a6b3c' }}>
+            <span className="font-mono text-[14px] tracking-[0.15em] uppercase block mb-6" style={{ color: '#1a6b3c' }}>
               ✓ Faz sentido para você se…
             </span>
             <div className="flex flex-col gap-4">

@@ -83,8 +83,7 @@ const HeroSection = ({ onOpenPopup }: HeroSectionProps) => {
 
             {/* FOC explainer */}
             <p className="fade-up font-mono text-[14px] mb-10 leading-[1.6]" style={{ color: 'var(--muted)' }}>
-              <span style={{ color: 'var(--red)', fontWeight: 500 }}>FOC</span> = Fluxo Operacional de Condomínios.
-              Processo + automação + dados para blindar sua administradora.
+              <span style={{ color: 'var(--red)', fontWeight: 500 }}>FOC</span> = Fluxo Operacional de Condomínios
             </p>
 
             {/* CTA */}

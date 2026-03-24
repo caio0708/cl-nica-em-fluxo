@@ -34,7 +34,7 @@ const Obrigado = () => {
         </h1>
 
         <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-          Parabéns por dar o primeiro passo para blindar a operação da sua clínica.
+          Parabéns por dar o primeiro passo para blindar a operação da sua administradora.
           Você receberá um e-mail de confirmação com todos os detalhes.
         </p>
 
@@ -50,7 +50,7 @@ const Obrigado = () => {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-accent font-bold mt-0.5">2.</span>
-              <span>Tenha em mente quantos <strong className="text-foreground">exames por dia</strong> sua clínica realiza em média.</span>
+              <span>Tenha em mente quantos <strong className="text-foreground">condomínios</strong> sua administradora gerencia atualmente.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-accent font-bold mt-0.5">3.</span>
